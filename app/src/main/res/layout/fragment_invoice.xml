@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".InvoiceFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="monospace"
+        android:text="Invoice"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Copy"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-------------------------------- x --------------------------------"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Prduct Id "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <TextView android:text=" : "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/invoice_product_id_view"
+                android:text="id"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Prduct Name "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <TextView android:text=" : "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/invoice_product_name_view"
+                android:text="name"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Sold Quantity "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <TextView android:text=" : "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/invoice_sold_quantity_view"
+                android:text="sold quantity"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Prduct price "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <TextView android:text=" : "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/invoice_product_price_view"
+                android:text="price per unit"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Total Price "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <TextView android:text=" : "
+                android:textColor="@android:color/black"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/invoice_total_price_view"
+                android:text="total price"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

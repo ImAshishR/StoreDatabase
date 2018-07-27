@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductFragment"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Add Product"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:fontFamily="monospace"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prduct Id : "
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/add_product_id_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Id"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prduct Name : "
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/add_product_name_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Name"
+            android:inputType="textPersonName"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prduct Quantity : "
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/add_product_quantity_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Quantity"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prduct Price : "
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/add_product_price_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Price per Unit"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_product_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/add_quantity"
+        android:text="Add"/>
+</LinearLayout>
